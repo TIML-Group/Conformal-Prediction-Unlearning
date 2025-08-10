@@ -83,8 +83,16 @@ After unlearning the forget data, use `main_evaluate.py` to measure the unlearni
 python main_evaluate.py --unlearn_name retrain --unlearn_type random --model_name resnet18 --data_name cifar10 --data_dir ./data --model_dir unlearning_model.pth --num_classes 10 --retain_ratio 0.9 --alphas 0.05
 ```
 
+## How to Cite
 
-
+```
+@article{shi2025redefining,
+  title={Redefining machine unlearning: A conformal prediction-motivated approach},
+  author={Shi, Yingdan and Liu, Sijia and Wang, Ren},
+  journal={arXiv preprint arXiv:2501.19403},
+  year={2025}
+}
+```
 
 
 

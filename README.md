@@ -7,7 +7,7 @@ This is the official repo for the paper: [Redefining Machine Unlearning: A Confo
 
 
 ##  News 
-- [x] [2025.01] 👏👏 Accepted by [**MuGen @ ICML 2025**](https://openreview.net/forum?id=wuGgok1Zyd).
+- [x] [2025.06] 👏👏 Accepted by [**MuGen @ ICML 2025**](https://openreview.net/forum?id=wuGgok1Zyd).
 - [x] [2025.01] 🚀🚀 Release the [**paper**](https://arxiv.org/abs/2501.19403).
 
 
@@ -82,7 +82,7 @@ To get an unlearning model with our unlearning framework **CPU**, use the follow
 python main_unlearn_cpu.py --unlearn_name finetune --unlearn_type random --model_name resnet18 --data_name cifar10 --data_dir ./data --model_dir original_model.pth --num_epochs 20 --num_classes 10 --retain_ratio 0.9 --learning_rate 0.1 --delta 0.01 --alpha 0.05 --lamda 0.5
 ```
 
-After unlearning the forget data, use `main_evaluate.py` to measure the unlearning model's performance by `CR` and `MIACR` metrics:
+After unlearning the forget data, use `main_evaluate.py` to measure the unlearning model's performance by **CR** and **MIACR** metrics:
 
 ```
 python main_evaluate.py --unlearn_name retrain --unlearn_type random --model_name resnet18 --data_name cifar10 --data_dir ./data --model_dir unlearning_model.pth --num_classes 10 --retain_ratio 0.9 --alphas 0.05

@@ -1,0 +1,9 @@
+numpy~=1.23.4
+tqdm~=4.66.5
+timm~=1.0.9
+torchsummary~=1.5.1
+scikit-learn~=1.5.1
+torchvision~=0.19.1
+scikit-image~=0.24.0
+pillow~=9.4.0
+wandb~=0.17.3

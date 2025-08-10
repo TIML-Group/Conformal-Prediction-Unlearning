@@ -6,6 +6,11 @@
 This is the official repo for the paper: [Redefining Machine Unlearning: A Conformal Prediction-Motivated Approach](https://arxiv.org/abs/2501.19403).
 
 
+##  News 
+- [x] [2025.01] 👏👏 Accepted by [**MuGen @ ICML 2025**](https://openreview.net/forum?id=wuGgok1Zyd).
+- [x] [2025.01] 🚀🚀 Release the [**paper**](https://arxiv.org/abs/2501.19403).
+
+
 ## Abstract
 Machine unlearning aims to eliminate the impact of specific data on a trained model. 
 Although metrics like unlearning accuracy (UA) and membership inference attack (MIA) are commonly used to evaluate forgetting quality, they fall short in capturing the reliability of forgetting. 

@@ -1,9 +1,10 @@
-# Redefining Machine Unlearning: A Conformal Prediction-Motivated Approach 
+# Tackling Fake Forgetting through Uncertainty Quantification
+
 [![preprint](https://img.shields.io/badge/arXiv-2410.07163-B31B1B)](https://arxiv.org/abs/2501.19403) 
 [![ICML 2026](https://img.shields.io/badge/ICML-2026-blue)](https://openreview.net/group?id=ICML.cc/2026)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the official repo for the paper: [Redefining Machine Unlearning: A Conformal Prediction-Motivated Approach](https://arxiv.org/abs/2501.19403).
+This is the official repo for the paper: [Tackling Fake Forgetting through Uncertainty Quantification](https://arxiv.org/abs/2501.19403).
 
 
 ##  News 

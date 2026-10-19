@@ -1,13 +1,13 @@
 # Redefining Machine Unlearning: A Conformal Prediction-Motivated Approach 
 [![preprint](https://img.shields.io/badge/arXiv-2410.07163-B31B1B)](https://arxiv.org/abs/2501.19403) 
-[![MuGen @ ICML 2025](https://img.shields.io/badge/MuGen@ICML-2025-blue)](https://openreview.net/forum?id=wuGgok1Zyd)
+[![MUGen @ ICML 2025](https://img.shields.io/badge/MuGen@ICML-2025-blue)](https://openreview.net/forum?id=wuGgok1Zyd)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This is the official repo for the paper: [Redefining Machine Unlearning: A Conformal Prediction-Motivated Approach](https://arxiv.org/abs/2501.19403).
 
 
 ##  News 
-- [x] [2025.06] 👏👏 Accepted by [**MuGen @ ICML 2025**](https://openreview.net/forum?id=wuGgok1Zyd).
+- [x] [2025.06] 👏👏 Accepted by [**MUGen @ ICML 2025**](https://openreview.net/forum?id=wuGgok1Zyd).
 - [x] [2025.01] 🚀🚀 Release the [**paper**](https://arxiv.org/abs/2501.19403).
 
 
@@ -32,13 +32,14 @@ Conformal-Prediction-Unlearning
 ├─ metrics	# package of our metrics (CR and MIACR)
 │    ├─ CR.py
 │    ├─ MIACR.py
-├─ models	# package of models (ResNet-18 and Vit)
+├─ models	# package of models (ResNet-18 and ViT)
 │    ├─ resnet.py
 │    ├─ vit.py
 ├─ main_original_model.py
 ├─ main_unlearn.py
 ├─ main_unlearn_cpu.py
 ├─ main_evaluate.py
+├─ main_evaluate_torchcp.py
 ├─ unlearn.py
 ├─ unlearn_cpu.py
 └─ utils.py
@@ -87,6 +88,15 @@ After unlearning the forget data, use `main_evaluate.py` to measure the unlearni
 ```
 python main_evaluate.py --unlearn_name retrain --unlearn_type random --model_name resnet18 --data_name cifar10 --data_dir ./data --model_dir unlearning_model.pth --num_classes 10 --retain_ratio 0.9 --alphas 0.05
 ```
+
+To try more conformal prediction methods, e.g., LAC and EntmaxScore, use the following command to get CR results:
+
+```
+python main_evaluate_torchcp.py --unlearn_name retrain --unlearn_type random --model_name resnet18 --data_name cifar10 --data_dir ./data --model_dir unlearning_model.pth --num_classes 10 --retain_ratio 0.9 --alphas 0.05
+```
+
+You may refer to [TorchCP](https://github.com/ml-stat-Sustech/TorchCP) for detailed installation steps.
+
 
 ## How to Cite
 
